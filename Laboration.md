@@ -18,14 +18,8 @@ Ni arbetar med att bygga ett orderhanteringssystem för en webbutik. På grund a
 >   - LINQ-metoder som `Where`, `OrderBy`, `Select`, etc.
 
 ## Kravspecifikation
-### 1. Produkthantering
-Produkterna ska lagras i en array. Ni ska implementera följande funktioner:
 
-- Lägga till en produkt i arrayen (hantera om arrayen blir full genom att skapa en ny, större array).
-- Ta bort en produkt från arrayen baserat på dess Id.
-- Söka efter en produkt baserat på namn eller kategori (implementera en linjär sökalgoritm).
-
-### 2. Lagersaldo
+### 1. Lagersaldo
 #### Skapa en metod som heter `UpdateStock` i klassen `Product`. Den ska:
 
 *   Ta två parametrar:
@@ -50,14 +44,22 @@ Eftersom metoden har flera möjliga utfall beroende på indata, behöver vi skri
 *   Försäljning med ogiltig mängd (0 eller negativt värde).
 *   Försäljning som överskrider lagersaldot.
 
-### 2. Sortering av produkter
+### 2. Produkthantering
+Produkterna ska lagras i en array. Ni ska implementera följande funktioner:
+
+- Lägga till en produkt i arrayen (hantera om arrayen blir full genom att skapa en ny, större array).
+- Ta bort en produkt från arrayen baserat på dess Id.
+- Söka efter en produkt baserat på namn eller kategori (implementera en linjär sökalgoritm).
+
+
+### 3. Sortering av produkter
 Implementera egna algoritmer för att sortera arrayen med produkter:
 
 - Sortering efter pris (stigande och fallande).
 - Sortering efter namn (alfabetisk ordning).
 - Sortering efter kategori.
 
-### 3. Filtrering av produkter
+### 4. Filtrering av produkter
 Implementera en filtreringsfunktion som returnerar en ny array med produkter baserat på:
 
 - Prisintervall.
